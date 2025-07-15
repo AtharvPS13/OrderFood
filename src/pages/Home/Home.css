@@ -8,8 +8,35 @@
   display: flex;     
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-.welcomeTitle {
-  color: white;
+.title {
+  position: absolute;      
+  top: 60px;               
+  left: 60px;           
+  font-size: 40px;
+  padding: 10px;
+}
+.title h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  line-height: 0.9; 
+  padding: 15px;
+}
+.text {
+  margin-top: 30px;
+  margin-left: 15px;
+  font-size: 25px;
+  border-left: 4px solid red;
+  padding: 10px;
+}
+.order-btn {
+  margin-top: 30px;
+  margin-left: 70px;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
 }
