@@ -1,0 +1,35 @@
+.body {
+    margin: 0px;
+    padding: 0px;
+}
+.navbar {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
+  justify-content: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 7px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #ddd;
+}
+
+.nav-link.active {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.cart-img,.user-img {
+  height: 35px;
+  margin-right: 20px;
+}
