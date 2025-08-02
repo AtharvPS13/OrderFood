@@ -11,8 +11,10 @@ function Header() {
       <NavLink to="/" className="nav-link">Home</NavLink>
       <NavLink to="/about" className="nav-link">About</NavLink>
       <NavLink to="/canteen" className="nav-link">Canteen</NavLink>
-      <img src={user} alt='user-img' className='user-img'></img>
-      <img src={cart} alt='cart-img' className='cart-img'></img>
+      <div className='images'>
+        <img src={user} alt='user-img' className='user-img'></img>
+        <img src={cart} alt='cart-img' className='cart-img'></img>
+      </div>
     </div>
   )
 }
