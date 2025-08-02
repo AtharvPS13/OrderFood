@@ -7,10 +7,13 @@ import user from '../../assets/user.png';
 
 function Header() {
   return (
-    <div className='navbar'>
-      <NavLink to="/" className="nav-link">Home</NavLink>
-      <NavLink to="/about" className="nav-link">About</NavLink>
-      <NavLink to="/canteen" className="nav-link">Canteen</NavLink>
+    <div className='header-container'>
+      <div className='navbar'>
+        <img className='logo-img' src='/logo.svg' alt='logo'/>
+        <NavLink to="/" className="nav-link">Home</NavLink>
+        <NavLink to="/about" className="nav-link">About</NavLink>
+        <NavLink to="/canteen" className="nav-link">Canteen</NavLink>
+      </div>
       <div className='images'>
         <img src={user} alt='user-img' className='user-img'></img>
         <img src={cart} alt='cart-img' className='cart-img'></img>

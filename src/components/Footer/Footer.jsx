@@ -1,8 +1,9 @@
 import React from 'react'
+import './Footer.css';
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className='footer-container'>Contact US @ OURMail</div>
   )
 }
 

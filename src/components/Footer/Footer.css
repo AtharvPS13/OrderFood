@@ -1,0 +1,6 @@
+.footer-container {
+    display: flex;
+    justify-content: end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
