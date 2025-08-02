@@ -1,0 +1,46 @@
+.menu-card {
+  width: 300px;
+  border: 3px solid #e2e8f0;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: white;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card-image {
+  width: 100%;
+  height:auto;
+  object-fit: cover;
+  padding: 7px;
+}
+
+.menu-card-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.plus-img-div {
+    display: flex;
+    justify-content: flex-end;
+}
+.plus-img {
+    width: 80px;
+    height: auto;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+}
+

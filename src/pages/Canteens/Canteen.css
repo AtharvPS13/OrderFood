@@ -16,3 +16,7 @@
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.menu-cards {
+    display: flex;
+    gap: 50px;
+}

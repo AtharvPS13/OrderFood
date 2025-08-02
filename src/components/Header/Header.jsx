@@ -1,8 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import './Header.css';
-import cart from '../../assets/cart.png';
-import user from '../../assets/user.png';
+import Dropdown from '../Dropdown/Dropdown';
 
 
 function Header() {
@@ -15,8 +14,9 @@ function Header() {
         <NavLink to="/canteen" className="nav-link">Canteen</NavLink>
       </div>
       <div className='images'>
-        <img src={user} alt='user-img' className='user-img'></img>
-        <img src={cart} alt='cart-img' className='cart-img'></img>
+        {/* user dropdonw /... */}
+        <Dropdown />
+        <img src="/cart.svg" alt='cart-img' className='cart-img'></img>
       </div>
     </div>
   )
