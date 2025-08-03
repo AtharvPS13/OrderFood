@@ -9,6 +9,10 @@ function Home() {
     navigate('/canteen')
   }
 
+  const knowMoreClick= () =>{
+    navigate('/about')
+  }
+
   return (
     <div className='home-container'>
       <div className='title'>
@@ -20,7 +24,7 @@ function Home() {
         <button className='order-btn' onClick={handleClick}>
           Order Now
         </button>
-        <button className='know-more-btn' onClick={handleClick}>
+        <button className='know-more-btn' onClick={knowMoreClick}>
           Know More
         </button>
         </div>
