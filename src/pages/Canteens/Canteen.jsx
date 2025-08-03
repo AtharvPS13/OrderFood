@@ -3,10 +3,11 @@ import './Canteen.css'
 import MenuCard from '../../components/MenuCard/MenuCard';
 
 const canteenList = [
-  { image: '/logo.svg', name: 'Delhi Hut', price: 10 },
-  { image: '/logo.svg', name: 'KFC', price: 0 },
-  { image: '/logo.svg', name: 'Subway', price: 0 },
-  { image: '/logo.svg', name: 'Food Court', price: 0 },
+  { image: '/logo.svg', name: 'Delhi Hut'},
+  { image: '/logo.svg', name: 'KFC'},
+  { image: '/logo.svg', name: 'Subway'},
+  { image: '/logo.svg', name: 'Food Court'},
+  { image: '/logo.svg', name: 'Cool Court'},
 ];
 
 function Canteen() {

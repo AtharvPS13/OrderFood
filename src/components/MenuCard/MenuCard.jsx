@@ -13,7 +13,6 @@ const MenuCard = ({item}) => {
                 <img src={item.image} alt={item.name} className="menu-card-image" />
                 <div className='menu-content'>
                     <div className='menu-card-name'>{item.name}</div>
-                    <div className='menu-card-price'>Rs.{item.price}</div>
                 </div>
             </div>
         </Link>    
@@ -24,7 +23,6 @@ MenuCard.propTypes = {
     item: PropTypes.shape({
         image: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
-        price: PropTypes.number.isRequired
     }).isRequired
 }
 

@@ -3,8 +3,28 @@ button {
 }
 
 .opened {
-    background-color: rebeccapurple;
+  background-color: rebeccapurple;
 }
 .closed {
-    background-color: red;
+  background-color: red;
+}
+
+.canteendetails-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: bisque;
+}
+.back-arrow {
+  height: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.menu-lists {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
