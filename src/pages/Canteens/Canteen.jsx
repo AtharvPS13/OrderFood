@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import './Canteen.css'
 import MenuCard from '../../components/MenuCard/MenuCard';
-const item1 = {
-    image: '/logo.svg',
-    name: 'Extra Samosa',
-    price: 15.01,
-  }
+
+const canteenList = [
+  { image: '/logo.svg', name: 'Delhi Hut', price: 10 },
+  { image: '/logo.svg', name: 'KFC', price: 0 },
+  { image: '/logo.svg', name: 'Subway', price: 0 },
+  { image: '/logo.svg', name: 'Food Court', price: 0 },
+];
 
 function Canteen() {
 
@@ -13,10 +15,9 @@ function Canteen() {
     <div className='canteen-page'>
       <div className='canteen-menu'>Canteens:</div>
       <div className='menu-cards'>
-        <MenuCard item={item1}/>
-        <MenuCard item={item1}/>
-        <MenuCard item={item1}/>
-        <MenuCard item={item1}/>
+        {canteenList.map((canteen, index) => (
+          <MenuCard key={index} item={canteen} />
+        ))}
       </div>
     </div>
   )

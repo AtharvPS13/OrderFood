@@ -1,19 +1,22 @@
 import React from 'react'
 import './MenuCard.css';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const MenuCard = ({item}) => {
+
+    const routeName = item.name.toLowerCase().replace(/\s+/g, '');
+
     return(
-        <div className='menu-card'>
-            <div className='plus-img-div'>
-                <img src="/plus-icon.svg" alt='addOption' className='plus-img'/>
+        <Link to={`/canteen/${routeName}`} className="menu-card-link">
+            <div className='menu-card'>
+                <img src={item.image} alt={item.name} className="menu-card-image" />
+                <div className='menu-content'>
+                    <div className='menu-card-name'>{item.name}</div>
+                    <div className='menu-card-price'>Rs.{item.price}</div>
+                </div>
             </div>
-            <img src={item.image} alt={item.name} className="menu-card-image" />
-            <div className='menu-content'>
-                <div className='menu-card-name'>{item.name}</div>
-                <div className='menu-card-price'>Rs.{item.price}</div>
-            </div>
-        </div>
+        </Link>    
     )
 }
 

@@ -1,0 +1,10 @@
+button {
+  all: unset;         
+}
+
+.opened {
+    background-color: rebeccapurple;
+}
+.closed {
+    background-color: red;
+}
