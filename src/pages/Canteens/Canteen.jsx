@@ -15,6 +15,8 @@ function Canteen() {
       <div className='menu-cards'>
         <MenuCard item={item1}/>
         <MenuCard item={item1}/>
+        <MenuCard item={item1}/>
+        <MenuCard item={item1}/>
       </div>
     </div>
   )

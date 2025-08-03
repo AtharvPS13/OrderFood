@@ -59,5 +59,6 @@
   transform: translateY(0);
 }
 .user-icon {
-    height:40px;
+  height:40px;
+  cursor: pointer;
 }
