@@ -32,7 +32,7 @@ function Dropdown() {
         <div className={`user-dropdown-menu ${isOpen ? 'open' : ''}`}>
             {['Profile', 'Settings', 'Sign Out'].map((item, index) => (
             <a 
-                href="#" 
+                href="*" 
                 className="user-dropdown-item" 
                 key={item}
             >

@@ -11,17 +11,21 @@ function Home() {
 
   return (
     <div className='home-container'>
-      <div className="bg-img"><img className = "bg-img-img"src='/pizza.jpg'/></div>
       <div className='title'>
-        <h1>Don't Strave</h1>
-        <h1>Just Order</h1>
+        <h1>CAMPUS CRAVINGS</h1>
         <div className='text'>
-          Craving Food? <br></br> Reserve Your Meal Before You Even Arrive!
+          Orders taking too long? <br></br> Clock in your Cravings, Reserve your Meal!
         </div>
+        <div className = 'home-page-buttons'>
         <button className='order-btn' onClick={handleClick}>
-          Order Now !
+          Order Now
         </button>
+        <button className='know-more-btn' onClick={handleClick}>
+          Know More
+        </button>
+        </div>
       </div>
+      <img src="../../public/white_pizza.png" className = "bg-img" alt="pizza" />
     </div>
   )
 }
