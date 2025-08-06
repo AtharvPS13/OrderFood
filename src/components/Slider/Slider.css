@@ -1,0 +1,37 @@
+.slider-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.slider-card {
+    border-radius: 12px;
+}
+.menu-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 7px;
+    gap: 40px;
+}
+
+.arrows {
+    width: 80vw;
+    z-index: 1000000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+}
+.next-arrow {
+    height: 100px ;
+    z-index: 10000;
+    cursor: pointer;
+    
+}
+.prev-arrow {
+    height: 100px ;
+    z-index: 10000;
+    cursor: pointer;
+}

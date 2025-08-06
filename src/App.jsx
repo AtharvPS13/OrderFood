@@ -7,6 +7,7 @@ import About from './pages/About/About'
 import Canteen from './pages/Canteens/Canteen'
 import Soon from './components/Coming_soon/Soon'
 import CanteensDetails from './pages/CanteensDetails/CanteensDetails'
+import Slider from './components/Slider/Slider'
 
 function App() {
   
@@ -16,7 +17,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Soon />} />
+        <Route path="/about" element={<Slider />} />
         <Route path="/canteen" element={<Canteen />} />
         <Route path="/canteen/:canteenName" element={<CanteensDetails />} />
         <Route path="*" element={<Soon />} />

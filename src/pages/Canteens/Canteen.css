@@ -6,21 +6,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: bisque;
 }
-.canteen-list {
-    margin: 10px;
-    width: 10rem;
-    height: auto;
-    border-radius: 10px;
-}
-.canteen-heading, .canteen-menu {
+.canteen-menu {
     font-size: 25px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 25px;
-}
-.menu-cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 7px;
-    gap: 40px;
 }
