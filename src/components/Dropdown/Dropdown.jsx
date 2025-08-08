@@ -1,12 +1,25 @@
-import React from 'react'
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Dropdown.css';
 
 function Dropdown() {
     const [isOpen,setIsOpen] = useState(false)
+    const [showLogin, setShowLogin] = useState(false)
     const dropdownRef = useRef(null);
+    const profileBtnRef = useRef(null);
 
-    const toggleDropdown=() => setIsOpen(!isOpen)
+    const toggleDropdown=() => {
+        setIsOpen(!isOpen)
+        setShowLogin(false)
+    }
+
+    const openLogin= () =>{
+        setIsOpen(false)
+        setShowLogin(true)
+    }
+    const closeLogin = () => {
+        setShowLogin(false);
+        profileBtnRef.current?.focus();
+    }
 
     useEffect(()=> {
         const handleClickOutside = (event) => {
@@ -29,17 +42,35 @@ function Dropdown() {
             <img src="/user.svg" alt='user-profile' className='user-icon'/>
         </div>
 
+        {isOpen && (
         <div className={`user-dropdown-menu ${isOpen ? 'open' : ''}`}>
-            {['Profile', 'Settings', 'Sign Out'].map((item, index) => (
-            <a 
-                href="*" 
-                className="user-dropdown-item" 
-                key={item}
-            >
-                {item}
-            </a>
-            ))}
+            <a href="*" className="user-dropdown-item">Profile</a>
+            <a href="*" className="user-dropdown-item">Settings</a>
+            <button onClick={openLogin} className="user-dropdown-item btn-link">
+            Login
+            </button>
+            <a href="*" className="user-dropdown-item">Sign Out</a>
         </div>
+        )
+        }
+
+        {/* Login box */}
+     
+
+        {showLogin && (
+            <>
+                <div className="login-overlay" onClick={closeLogin}></div>
+                <div className='login-box'> 
+                    <h3 className='login-heading'>Login</h3>
+                    <input type="text" placeholder="Username" />
+                    <input type="password" placeholder="Password" />
+                    <button className="login-btn">Login</button>
+                    <button className="close-btn" onClick={closeLogin}>
+                        Close
+                    </button>
+                </div>
+            </>
+        )}
     </div>
   )
 }
